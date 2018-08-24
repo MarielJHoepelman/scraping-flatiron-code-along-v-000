@@ -1,6 +1,7 @@
 require 'nokogiri'
 require 'open-uri'
-require 'pruy'
+require 'pry'
+
 require_relative './course.rb'
 
 class Scraper
