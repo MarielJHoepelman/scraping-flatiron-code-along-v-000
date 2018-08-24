@@ -21,6 +21,7 @@ class Scraper
   end
 
   def get_courses
+    get_page.css("#instructors .team-holder .person-box")
   end
 
 end
