@@ -25,8 +25,10 @@ class Scraper
   end
 
   def make_courses
-    instructors.each do |instructor|
-      puts "Flatiron School <3 " + instructor.css("h2").text
+    get_courses.each do |course|
+      binding.pry
+      # new_course = Course.new
+      # new_course.title
     end
   end
 end
