@@ -23,4 +23,10 @@ class Scraper
   def get_courses
     get_page.css("#course-grid .posts-holder .post")
   end
+
+  def make_courses
+    instructors.each do |instructor|
+      puts "Flatiron School <3 " + instructor.css("h2").text
+    end
+  end
 end
